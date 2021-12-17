@@ -1,18 +1,16 @@
 <template>
   <div id="app">
     <Title />
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <img alt="Vue logo" src="./assets/jumbotron.jpg" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+
 import Title from "./components/Title.vue";
 export default {
   name: "App",
   components: {
-    HelloWorld,
     Title
   },
 };
@@ -20,11 +18,19 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
 </style>
